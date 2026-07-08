@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+f<!DOCTYPE html>
 <html lang="en">
 <head> 
   <meta charset="UTF-8" />
@@ -125,19 +125,25 @@
       line-height: 1.7;
     }
 
-    .btn {
-      display: inline-flex; align-items: center; gap: 0.5rem;
-      background: var(--accent);
-      color: var(--navy);
-      font-family: 'Barlow Condensed', sans-serif;
-      font-weight: 700;
-      font-size: 1rem;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      text-decoration: none;
-      padding: 0.85rem 2rem;
-      border-radius: 3px;
-      transition: background 0.2s, transform 0.15s;
+    .btn-secondary {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  background: transparent;
+  color: var(--accent) !important;
+  border: 1.5px solid var(--accent);
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none !important;
+  padding: 0.85rem 2rem;
+  border-radius: 3px;
+  transition: background 0.2s, color 0.2s, transform 0.15s;
+  margin-left: 1rem;
+}
+.btn-secondary:visited { color: var(--accent) !important; }
+.btn-secondary:hover { background: var(--accent); color: var(--navy) !important; transform: translateY(-1px); }
+
     }
     .btn:hover { background: #fbb340; transform: translateY(-1px); }
 
